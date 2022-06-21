@@ -11,7 +11,8 @@ app.get("/", function (req, res) {
 
 app.post("/", function (req, res) {
 const query = req.body.cityName;
-const appID = "8a71f652394a2c1c6c0ef551d67837c3"; 
+//Use your private API key for appID below
+const appID = "xxxxxxxx1c6c0ef551d6xxxxxxx"; 
 const units = "Imperial";
 const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + appID + "&units=" + units + ""
     https.get(url, function (response) {
